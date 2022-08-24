@@ -1,0 +1,64 @@
+.container {
+
+
+  .main {
+    display: flex;
+
+    .right {
+      flex: 0.5;
+      padding: 20px;
+    }
+    .left {
+      flex: 0.5;
+      padding: 20px;
+    }
+  }
+}
+
+/*.container {
+  display: block;
+
+  .titre{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+  }
+  .box {
+    display: flex;
+    margin-bottom: 30px;
+
+    > * {
+      display: inline-block;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .left {
+      flex: 0.5;
+      height: auto;
+    }
+    .right {
+      flex: 0.5;
+      height: auto;
+    }
+  }
+.globale{
+  background: #344258;
+}
+.vente{
+  background: #485468;
+}
+.stock{
+  background: #5c6779;
+}
+.achats{
+  background: #707a8a;
+}
+.finance{
+  background: #858d9a;
+}
+}
+*/

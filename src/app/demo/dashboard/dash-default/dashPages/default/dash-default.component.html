@@ -1,0 +1,417 @@
+<div class="container">
+  <div class="head">
+    <div class="col-md-12 col-xl-12">
+      <app-card [hidHeader]="true">
+        <h5>Logigram</h5>
+        <app-apex-chart
+          chartID="logigramVente"
+          [chartConfig]="this.logigram"
+        >
+        </app-apex-chart>
+      </app-card>
+    </div>
+  </div>
+<div class="main">
+  <div class="right">
+    <div class="row">
+      <div class="col-md-12 col-xl-12">
+        <app-card [hidHeader]="true">
+          <h5>Top Client</h5>
+          <app-apex-chart
+            chartID="power-card-chart-2"
+            [chartConfig]="this.topClient"
+          >
+          </app-apex-chart>
+        </app-card>
+      </div>
+      <div class="col-md-12 col-xl-12">
+        <app-card [hidHeader]="true">
+          <h5>radial bar</h5>
+          <app-apex-chart
+          chartID="radialBar"
+          [chartConfig]="this.radialBar"
+          >
+
+          </app-apex-chart>
+        </app-card>
+      </div>
+      <div class="col-sm-12">
+        <app-card
+          [hidHeader]="true"
+          blockClass="p-0"
+          cardClass="flat-card widget-purple-card"
+        >
+          <div class="row-table">
+            <div class="col-sm-3 card-body">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="col-sm-9">
+              <h6>Quick Link</h6>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-sm-12">
+        <app-card
+          [hidHeader]="true"
+          blockClass="p-0"
+          cardClass="flat-card widget-purple-card"
+        >
+          <div class="row-table">
+            <div class="col-sm-3 card-body">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="col-sm-9">
+              <h6>Quick Link</h6>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-sm-12">
+        <app-card
+          [hidHeader]="true"
+          blockClass="p-0"
+          cardClass="flat-card widget-purple-card"
+        >
+          <div class="row-table">
+            <div class="col-sm-3 card-body">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="col-sm-9">
+              <h6>Quick Link</h6>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-blue"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">145.000 DT</h4>
+              <h6 class="text-muted m-b-0">Chiffre d'affaire</h6>
+            </div>
+            <div class="col-4 text-right">
+              <i class="fa fa-dollar-sign f-28"></i>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">20% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-up text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-blue"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">300 DT</h4>
+              <h6 class="text-muted m-b-0">Marge</h6>
+            </div>
+            <div class="col-4 text-right">
+              <i class="fa fa-arrow-circle-up f-28"></i>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-down text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-blue"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">145</h4>
+              <h6 class="text-muted m-b-0">Delais de paiement client</h6>
+            </div>
+            <div class="col-4 text-right">
+              <i class="fas fa-history f-28"></i>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-down text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-blue"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">145</h4>
+              <h6 class="text-muted m-b-0">Niveau de la trésorerie</h6>
+            </div>
+            <div class="col-4 text-right">
+              <i class="fa fa-dollar-sign f-28"></i>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-down text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="left">
+    <div class="row">
+      <div class="col-md-12 col-xl-12">
+        <app-card cardTitle="Client" [options]="false">
+          <app-apex-chart
+            chartID="pie-chart-2-cac"
+            [chartConfig]="this.chartDB.pie2CAC"
+            routerLink="/dashboard/finance"
+          ></app-apex-chart>
+        </app-card>
+      </div>
+      <div class="col-md-12 col-xl-12">
+        <app-card [hidHeader]="true">
+          <h5>radial bar teams</h5>
+          <app-apex-chart
+          chartID="radialBarTeams"
+          [chartConfig]="this.radialBarTeams"
+          >
+
+          </app-apex-chart>
+        </app-card>
+      </div>
+      <div class="col-sm-12">
+        <app-card
+          [hidHeader]="true"
+          blockClass="p-0"
+          cardClass="flat-card widget-primary-card"
+        >
+          <div class="row-table">
+            <div class="col-sm-3 card-body">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="col-sm-9">
+              <h6>Quick Link</h6>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-sm-12">
+        <app-card
+          [hidHeader]="true"
+          blockClass="p-0"
+          cardClass="flat-card widget-primary-card"
+        >
+          <div class="row-table">
+            <div class="col-sm-3 card-body">
+              <a routerLink="/dashboard/finance"><i class="fas fa-link"></i></a>
+
+            </div>
+            <div class="col-sm-9">
+              <h6>Quick Link</h6>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-sm-12">
+        <app-card
+          [hidHeader]="true"
+          blockClass="p-0"
+          cardClass="flat-card widget-primary-card"
+        >
+          <div class="row-table">
+            <div  class="col-sm-3 card-body">
+              <a routerLink="/dashboard/finance"><i class="fas fa-link"></i></a>
+            </div>
+            <div class="col-sm-9">
+              <h6>Quick Link</h6>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-green"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-green">145</h4>
+              <h6 class="text-muted m-b-0">Montant de charge fixe</h6>
+            </div>
+            <div class="col-4 text-right">
+              <i class="fas fa-file-invoice-dollar f-28"></i>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-down text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-green"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-green">145</h4>
+              <h6 class="text-muted m-b-0">Montant investissements</h6>
+            </div>
+            <div class="col-4 text-right">
+              <i class="fas fa-chart-line f-28"></i>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-down text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-green"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-green">145</h4>
+              <h6 class="text-muted m-b-0">Taux de marque</h6>
+            </div>
+            <div class="col-4 text-right">
+              <i class="fas fa-donate f-26"></i>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-down text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-green"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-green">145</h4>
+              <h6 class="text-muted m-b-0">Taux de retour produits</h6>
+            </div>
+            <div class="col-4 text-right">
+              <i class="fas fa-tasks f-28"></i>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-down text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-xl-6 col-md-12">
+        <app-card [hidHeader]="true">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <h3>1,62,564</h3>
+              <h6 class="text-muted m-b-0">
+                Products<i class="fa fa-caret-down text-c-red m-l-10"></i>
+              </h6>
+            </div>
+            <div class="col-6">
+              <app-apex-chart
+                chartID="seo-chart-3"
+                [chartConfig]="this.seoChartData3"
+              ></app-apex-chart>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-xl-6 col-md-12">
+        <app-card [hidHeader]="true">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <h3>1,62,564</h3>
+              <h6 class="text-muted m-b-0">
+                Products<i class="fa fa-caret-down text-c-red m-l-10"></i>
+              </h6>
+            </div>
+            <div class="col-6">
+              <app-apex-chart
+                chartID="seo-chart-1"
+                [chartConfig]="this.seoChartData1"
+              ></app-apex-chart>
+            </div>
+          </div>
+        </app-card>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>

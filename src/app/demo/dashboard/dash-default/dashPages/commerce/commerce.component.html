@@ -1,0 +1,284 @@
+<div class="container">
+  <div class="right">
+    <div class="row">
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-blue"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">50</h4>
+              <h6 class="text-muted m-b-0">Indice Vente</h6>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-up text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-blue"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">50</h4>
+              <h6 class="text-muted m-b-0">taux de fidélisation</h6>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-up text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-blue"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-yellow">$30200</h4>
+              <h6 class="text-muted m-b-0">taux d’attrition</h6>
+            </div>
+            <div class="col-4 text-right">
+              <i class="feather icon-bar-chart-2 f-28"></i>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-up text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-blue"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">50</h4>
+              <h6 class="text-muted m-b-0">taux de conversion</h6>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-up text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-blue"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">50</h4>
+              <h6 class="text-muted m-b-0">taux de fidélisation</h6>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-up text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-6">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-blue"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-yellow">$30200</h4>
+              <h6 class="text-muted m-b-0">taux d’attrition</h6>
+            </div>
+            <div class="col-4 text-right">
+              <i class="feather icon-bar-chart-2 f-28"></i>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-up text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+
+      <div class="col-md-12 col-xl-12">
+        <app-card [hidHeader]="true">
+          <h5>Top Client</h5>
+          <app-apex-chart
+            chartID="power-card-chart-2"
+            [chartConfig]="this.topClient"
+          >
+          </app-apex-chart>
+        </app-card>
+      </div>
+      <div class="col-md-12 col-xl-12">
+        <app-card cardTitle="Pie Chart donut" [options]="false">
+          <app-apex-chart
+            chartID="pie-chart-2-cac"
+            [chartConfig]="this.chartDB.pie2CAC"
+          ></app-apex-chart>
+        </app-card>
+      </div>
+    </div>
+  </div>
+  <div class="left">
+    <div class="row">
+      <div class="col-md-12">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-yellow"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">50</h4>
+              <h6 class="text-muted m-b-0">Chiffre d'affaire</h6>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-up text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-12">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-yellow"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">50</h4>
+              <h6 class="text-muted m-b-0">taux de riiiien</h6>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-up text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-12">
+        <app-card
+          [hidHeader]="true"
+          [isCardFooter]="true"
+          footerClass="bg-c-yellow"
+        >
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h4 class="text-c-blue">50</h4>
+              <h6 class="text-muted m-b-0">taux de riiiien</h6>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <p class="text-white m-b-0">% change</p>
+              </div>
+              <div class="col-3 text-right">
+                <i class="feather icon-trending-up text-white f-16"></i>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+      <div class="col-md-12 col-xl-12">
+        <app-card [hidHeader]="true">
+          <h5>Logigram</h5>
+          <app-apex-chart
+            chartID="logigramVente"
+            [chartConfig]="this.logigram"
+          >
+          </app-apex-chart>
+        </app-card>
+      </div>
+      <div class="col-md-12 col-xl-12">
+        <table class="table table-primary table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr>
+              <th scope="row">1</th>
+              <td></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
